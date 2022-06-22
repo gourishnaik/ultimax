@@ -1,0 +1,60 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tours{
+    color:rgb(87, 82, 82);
+  position: relative;
+}
+
+.tours{
+  
+    display:inline-block;
+    position:relative;
+    
+  }
+  
+  .tours::after{
+    content:'';
+    height:4px;
+    width:40%;
+    background:palevioletred;
+    position:absolute;
+    left:calc(50% - 10%);
+    bottom:-5px;
+    
+  }
+.para{
+    text-align: left;
+    margin-left: 80px;
+    margin-top: 12px;
+    color: grey;
+    font-size: 18px;
+}
+
+.button{
+    background-color:#E75480;
+    color: black;
+    border-radius: 20px;
+    font-weight: 400;
+    height: 42px;
+}
+.main{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    display: grid;
+    width: 80vw;
+    grid-template-columns: repeat(auto-fill,minmax(300px,300px));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+img{
+    width:230px;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+}
